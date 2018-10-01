@@ -2,31 +2,32 @@ version: '3'
 
 services:
   node1:
-    image: funkypenguin/turtlecoin
-    container_name: turtletest-node1
+    image: Erickim777/EthereumCash
+    container_name: ethereumcash-node1
     volumes:
-      - ../turtlecoind:/var/lib/turtlecoind/
+      - ../EthereumCashd:/var/lib/turtlecoind/
     networks:
       testnet:
-        ipv4_address: 172.16.76.11
+        ipv4_address: 211.39.150.252
   
 #  node2:
-#    image: funkypenguin/turtlecoin
-#    container_name: turtletest-node2
+#    image: Erickim777/EthereumCash
+#    container_name: ethereumcash-node2
 #    networks:
 #      testnet:
-#        ipv4_address: 172.16.76.12
+#        ipv4_address: 211.39.150.247
   
 #  node3:
-#    image: funkypenguin/turtlecoin
-#    container_name: turtletest-node3
+#    image: Erickim777/EthereumCash
+#    container_name: ethereumcash-node3
 #    networks:
 #      testnet:
-#        ipv4_address: 172.16.76.13
+#        ipv4_address: 211.39.150.248
 
 networks:
   testnet:
     ipam:
       config:
         - subnet: 172.16.76.0/24
+
 
